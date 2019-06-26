@@ -1,0 +1,3 @@
+docker build -t ex1.11 .
+touch logs.txt
+docker run -p 8000:8000 -v $(pwd)/logs.txt:/logs.txt ex1.11
