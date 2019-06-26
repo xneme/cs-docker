@@ -1,0 +1,12 @@
+FROM node:10.15
+
+WORKDIR /
+COPY . .
+
+ENV FRONT_URL=http://localhost:5000
+
+RUN npm ci
+
+EXPOSE 8000
+
+CMD ["npm", "start"]
