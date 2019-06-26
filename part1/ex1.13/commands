@@ -1,0 +1,2 @@
+docker build -t ex1.13 .
+docker run -p 8080:8080 ex1.13
